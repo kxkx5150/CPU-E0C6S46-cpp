@@ -4,6 +4,10 @@
 
 <br><br><br>
 
+[E0C6S46 Technical Manual - Epson Europe](https://download.epson-europe.com/pub/electronics-de/asmic/4bit/62family/technicalmanual/tm_6s46.pdf)  
+
+<br><br><br>
+
 <pre>
 sudo apt-get install libpng-dev
 </pre>
@@ -20,6 +24,10 @@ Pressing left, down and right arrow keys.
 Pressing f toggles between the original speed, x10 speed and unlimited speed.  
 
 <br><br><br>
+
+
+https://user-images.githubusercontent.com/10168979/194882945-6afa9ac3-3f93-43da-b0df-7f83f2e9131e.mp4
+
 
 
 

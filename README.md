@@ -8,6 +8,10 @@
 
 <br><br><br>
 
+Ubuntu 22.04  
+
+install SDL2, libpng-dev   
+
 <pre>
 sudo apt-get install libpng-dev
 </pre>

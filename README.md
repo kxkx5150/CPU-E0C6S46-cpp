@@ -32,6 +32,9 @@ Pressing f toggles between the original speed, x10 speed and unlimited speed.
 
 https://user-images.githubusercontent.com/10168979/194882945-6afa9ac3-3f93-43da-b0df-7f83f2e9131e.mp4
 
+use [tamalib](https://github.com/jcrona/tamalib) as a reference
+
+
 
 
 

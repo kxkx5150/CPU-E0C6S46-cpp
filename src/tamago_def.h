@@ -1,0 +1,69 @@
+#define LCD_HEIGHT 16
+#define ICON_NUM   8
+#define LCD_WIDTH  32
+
+#define REF_BACKGROUND_SIZE     345
+#define REF_BACKGROUND_OFFSET_X 148
+#define REF_BACKGROUND_OFFSET_Y 284
+
+#define REF_SHELL_WIDTH  634
+#define REF_SHELL_HEIGHT 816
+
+#define REF_LCD_SIZE     321
+#define REF_LCD_OFFSET_X 12
+#define REF_LCD_OFFSET_Y 93
+
+#define ICON_SRC_SIZE 64
+
+#define REF_ICON_DEST_SIZE 64
+#define REF_ICON_OFFSET_X  35
+#define REF_ICON_OFFSET_Y  25
+#define REF_ICON_STRIDE_X  71
+#define REF_ICON_STRIDE_Y  242
+
+#define REF_BUTTONS_X      182
+#define REF_BUTTONS_Y      716
+#define REF_BUTTONS_WIDTH  278
+#define REF_BUTTONS_HEIGHT 88
+
+#define REF_PIXEL_PADDING    1
+#define DEFAULT_PIXEL_STRIDE 10
+#define PIXEL_STRIDE_MIN     1
+#define PIXEL_STRIDE_MAX     30
+
+#define DEFAULT_LCD_ALPHA_ON  255
+#define DEFAULT_LCD_ALPHA_OFF 20
+
+#define RES_PATH        "./res"
+#define BACKGROUND_PATH RES_PATH "/background.png"
+#define ICONS_PATH      RES_PATH "/icons.png"
+
+#define AUDIO_FREQUENCY 48000
+#define AUDIO_SAMPLES   480    // 10 ms @ 48000 Hz
+#define AUDIO_VOLUME    0.1f
+#define MEM_FRAMERATE   30    // fps
+
+#define MAX_SPRITES       256
+#define DEFAULT_FRAMERATE 30    // fps
+
+#define TAMALIB_SET_BUTTON(btn, state) hw_set_button(btn, state)
+#define TAMALIB_SET_SPEED(speed)       g_cpu->cpu_set_speed(speed)
+#define TAMALIB_GET_STATE()            cpu_get_state()
+#define TAMALIB_REFRESH_HW()           cpu_refresh_hw()
+#define TAMALIB_RESET()                cpu_reset()
+
+#define PIXEL_SIZE      (DEFAULT_PIXEL_STRIDE - DEFAULT_PIXEL_STRIDE / 10)
+#define LCD_SIZE        (DEFAULT_PIXEL_STRIDE * (LCD_WIDTH + 1) - PIXEL_SIZE)
+#define BG_SIZE         ((LCD_SIZE * REF_BACKGROUND_SIZE) / REF_LCD_SIZE)
+#define LCD_OFFSET_X    ((LCD_SIZE * REF_LCD_OFFSET_X) / REF_LCD_SIZE + DEFAULT_PIXEL_STRIDE - PIXEL_SIZE)
+#define LCD_OFFSET_Y    ((LCD_SIZE * REF_LCD_OFFSET_Y) / REF_LCD_SIZE)
+#define ICON_DEST_SIZE  ((LCD_SIZE * REF_ICON_DEST_SIZE) / REF_LCD_SIZE)
+#define ICON_OFFSET_X   ((LCD_SIZE * REF_ICON_OFFSET_X) / REF_LCD_SIZE)
+#define ICON_OFFSET_Y   ((LCD_SIZE * REF_ICON_OFFSET_Y) / REF_LCD_SIZE)
+#define ICON_STRIDE_X   ((LCD_SIZE * REF_ICON_STRIDE_X) / REF_LCD_SIZE)
+#define ICON_STRIDE_Y   ((LCD_SIZE * REF_ICON_STRIDE_Y) / REF_LCD_SIZE)
+#define PIXEL_ALPHA_OFF ((PIXEL_SIZE != DEFAULT_PIXEL_STRIDE) ? DEFAULT_LCD_ALPHA_OFF : 0)
+#define BUTTONS_X       ((LCD_SIZE * REF_BUTTONS_X) / REF_LCD_SIZE)
+#define BUTTONS_Y       ((LCD_SIZE * REF_BUTTONS_Y) / REF_LCD_SIZE)
+#define BUTTONS_WIDTH   ((LCD_SIZE * REF_BUTTONS_WIDTH) / REF_LCD_SIZE)
+#define BUTTONS_HEIGHT  ((LCD_SIZE * REF_BUTTONS_HEIGHT) / REF_LCD_SIZE)

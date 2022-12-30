@@ -13,7 +13,7 @@ Ubuntu 22.04
 install SDL2, libpng-dev   
 
 <pre>
-sudo apt-get install libpng-dev
+sudo apt-get install build-essential cmake clang-format libpng-dev
 </pre>
 
 <pre>
